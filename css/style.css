@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    border: solid 1px black;
+}
+
+/* -----------------------------------
+palette
+----------------------------------- */
+:root {
+	--color-primary: #adff2f;
+	--color-secondary-bg: #141922;
+	--color-neutral-white: #ffffff;
+	--color-neutral: #d2d2d2;
+	--color-neutral-dark: #a3a3a3;
+	--color-neutral-darker: #282828;
+	--color-neutral-black: #000000;
+    --color-transparent-black: #00000080;
+}
