@@ -29,6 +29,7 @@ variable
     --play-bar-height: 80px;
     --nav-width: 250px;
     --banner-height: 80px;
+    --width-1-6: calc(100% / 6);
 }
 
 
@@ -48,6 +49,11 @@ flex
 .f-d-column
 {
     flex-direction: column;
+}
+
+.j-c-center
+{
+    justify-content: center;
 }
 
 
@@ -152,7 +158,7 @@ nav ul
     width: 100%;
     top: 0;
     left: var(--nav-width);
-    background-color: #00000070;
+    background-color: var(--color-transparent-black);
     z-index: 1000;
 }
 
@@ -160,12 +166,43 @@ nav ul
 {
     width: calc(100% - var(--nav-width));
     height: 100%;
-    background-color: pink;
     overflow-y: auto;
-    padding-top: var(--banner-height);
+    padding: var(--banner-height) 1rem 0;
+    background-color: var(--color-secondary-bg);
+    color: var(--color-neutral-white);
+    
 }
 
+.flex-content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+/* .flex-content>*
+{
+    padding: 0.5rem;
+} */
+
+.nav-bar-top
+{
+    color: var(--color-neutral-dark);
+}
+
+.box-card
+{
+    margin: -1rem;
+}
+
+.card   
+{
+    width: calc((100% /6) + 1rem);
+    height: 200px;
+    background-color: red;
+    padding: 0.5rem;
+
+}
 
 
 /* ----------------------------------- 
