@@ -299,10 +299,23 @@ play-bar
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: green;
+    background-color: var(--color-neutral-darker);
     z-index: 10000;
 }
 
+.play-bar-left,
+.play-bar-right
+{
+    width: var(--nav-width);
+    background-color: red;
+}
+
+.play-bar-center
+{
+    width: 100%;
+    max-width: 500px;
+    background-color: blue;
+}
 
 
 
