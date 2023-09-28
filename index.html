@@ -20,24 +20,26 @@
                 <div>
 
                     <div class="logo">
-                        <img src="img/logo.svg" alt="logo" id="logo-lg">
+                        <img src="img/logo.svg" alt="logo" class="hidden-xs" id="logo-lg">
+                        <img src="img/logo-small.svg" alt="logo" id="logo-sm">
                     </div>
+
                     <div class="menu">
                         <ul>
                             <li class="p-relative c-white">
-                                <div class="green-bar-v"></div>
-                                <a href="#"  class="icons-text-align">
+                                <div class="green-bar-v hidden-xs"></div>
+                                <a href="#"  class="icons-text-align m-b-0-5-rem">
                                     <svg viewBox="0 0 512 512"
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="svg-lg">
                                     <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
                                     fill="currentColor"/>
                                     </svg>
-                                    <h6 class="c-white">Home</h6>
+                                    <h6 class="c-white hidden-xs">Home</h6>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="icons-text-align">
+                                <a href="#" class="icons-text-align m-b-0-5-rem">
                                     <svg viewBox="0 0 512 512"
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="svg-lg">
@@ -45,7 +47,7 @@
                                     fill="currentColor"
                                     fill-rule="evenodd"/>
                                     </svg>
-                                    <h6>Cerca</h6>
+                                    <h6 class="hidden-xs">Cerca</h6>
                                 </a>
                             </li>
                             <li>
@@ -55,13 +57,13 @@
                                     class="svg-lg">
                                     <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"/>
                                     </svg>
-                                    <h6>La tua libreria</h6>
+                                    <h6 class="hidden-xs">La tua libreria</h6>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     
-                    <div class="playlist m-t-1-rem">
+                    <div class="playlist hidden-xs m-t-1-rem">
                         <h5 class="c-white">PLAYLIST</h5>
                         <a href="#" class="crea-playlist icons-text-align m-b-0-5-rem m-t-0-5-rem">
                             <i class="fa-solid fa-square-plus icons-xl"></i>
@@ -80,8 +82,8 @@
 
                 </div>
 
-                <div class="profile m-b-0-5-rem">
-                    <a href="#" class="icons-text-align">
+                <div class="profile">
+                    <a href="#" class="icons-text-align p-t-b-0-5-rem">
                         <svg viewBox="0 0 20 20" 
                         xmlns="http://www.w3.org/2000/svg"
                         class="svg-sm">
@@ -89,12 +91,12 @@
                         <path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="currentColor" 
                         fill-rule="evenodd"/>
                         </svg>       
-                        <h6>Installa app</h6>             
+                        <h6 class="hidden-xs">Installa app</h6>             
                     </a>
 
-                    <div class="divider"></div>
+                    <div class="divider hidden-xs"></div>
 
-                    <div class="icons-text-align c-white">
+                    <div class="icons-text-align c-white p-t-b-0-5-rem">
                         <div class="svg-lg circle of-hidden bg-n-dark">
                             <svg viewBox="0 0 80 90"
                             xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +106,7 @@
                             fill-rule="evenodd"/>
                             </svg>
                         </div>
-                        <h5>John Doe</h5>
+                        <h5 class="hidden-xs">John Doe</h5>
                     </div>
                 </div>
 
@@ -307,6 +309,7 @@
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
+
             <div class="play-bar-center d-flex f-d-column j-c-center a-i-center">
                 <div class="d-flex a-i-center m-b-0-5-rem">
                     <i class="fa-solid fa-shuffle icons-md p-s-0-5-rem"></i>
@@ -327,6 +330,7 @@
                     <span>4:35</span>
                 </div>
             </div>
+
             <div class="play-bar-right d-flex a-i-center j-c-s-between gap-0-5-rem">
                 <i class="fa-solid fa-list-ul icons-sm"></i>
                 <i class="fa-solid fa-display icons-sm"></i>

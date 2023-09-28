@@ -29,6 +29,7 @@ variable
     --play-bar-height: 80px;
     --nav-width: 200px;
     --banner-height: 80px;
+    --play-bar-section-width: 200px;
     --width-1-6: calc(100% / 6);
 }
 
@@ -64,6 +65,11 @@ utility
 .p-s-1-rem
 {
     padding: 0 1rem;
+}
+
+.p-t-b-0-5-rem
+{
+    padding: 0.5rem 0;
 }
 
 .icons-sm
@@ -261,24 +267,26 @@ nav
     margin: 20px 0;
 }
 
-nav ul
+#logo-sm
 {
-    line-height: 30px;
+    width: 100%;
+    margin: 10px 0;
+    display: none;
 }
+
 
 .divider
 {
     border-bottom: solid 1px var(--color-neutral-dark);
-    margin: 10px 0;
 }
 
 
 .playlist ul
 {
+    line-height: 30px;
     min-height: 50px;
     height: calc(100vh - 420px);
     overflow-y: auto;
-    /* overflow: hidden; */
 }
 
 .green-bar-v
@@ -297,7 +305,7 @@ banner
 {
     height: var(--banner-height);
     position: fixed;
-    width: 100%;
+    width: calc(100% - var(--nav-width));
     top: 0;
     left: var(--nav-width);
     background-color: var(--color-transparent-black);
@@ -308,7 +316,7 @@ banner
 .btn
 {
     position: absolute;
-    right: 220px;
+    right: 20px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -348,7 +356,7 @@ content section
 .content h6
 {
     margin-top: 0.5rem;
-    color: var(--color-neutral-dark);
+    color: var(--color-neutral-dark); 
 }
 
 .green-bar-h
@@ -429,7 +437,7 @@ play-bar
 .play-bar-left,
 .play-bar-right
 {
-    width: var(--nav-width);
+    width: var(--play-bar-section-width);
     /* background-color: red; */
     padding: 0 0.5rem;
 }
@@ -447,6 +455,12 @@ play-bar
     height: calc(var(--play-bar-height) / 2);
     aspect-ratio: 1/1;
 }
+
+/* slider style */
+
+
+
+
 
 #song-bar
 {
@@ -505,5 +519,28 @@ responsive
 
 @media screen and (max-width: 576px) 
 {
-    
+
+    :root {
+        --nav-width: 60px;
+    }
+
+    .hidden-xs
+    {
+        display: none;
+    }
+
+    #logo-sm
+    {
+        display: block;
+    }
+
+    .menu a,
+    .profile>* 
+    {
+        justify-content: center;
+    }
+
 }
+
+
+
