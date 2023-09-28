@@ -98,7 +98,7 @@ utility
 {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     display: block;
 }
 
@@ -106,6 +106,14 @@ utility
 {
     overflow: hidden;
 }
+
+.p-relative
+{
+    position: relative;
+}
+
+
+
 
 /* -----------------------------------
 flex
@@ -158,6 +166,12 @@ a
     color: inherit;
 }
 
+nav a:hover,
+.nav-bar-top h6:hover
+{
+    color: var(--color-neutral-white);
+}
+
 ul
 {
     list-style: none;
@@ -174,9 +188,9 @@ span
     font-weight: 600;
 }
 
-.icons-xl
+.icons-md
 {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .icons-lg
@@ -184,19 +198,24 @@ span
     font-size: 1.5rem;
 }
 
-.icons-md
+.icons-xl
 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
-.svg-lg
+.icons-xxl
 {
-    height: 25px;
+    font-size: 3rem;
 }
 
 .svg-sm
 {
     height: 15px;
+}
+
+.svg-lg
+{
+    height: 25px;
 }
 
 
@@ -237,11 +256,11 @@ nav ul
     border-bottom: solid 1px var(--color-neutral-dark);
     margin: 10px 0;
 }
-
+/* 
 .crea-playlist
 {
 
-}
+} */
 
 
 
@@ -331,6 +350,28 @@ nav ul
     text-align: center;
 }
 
+.img-container
+{
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.p-a-center-icons
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-container:hover .p-a-center-icons
+{
+    opacity: 1; 
+}
+
+
 
 /* ----------------------------------- 
 play-bar
@@ -351,7 +392,7 @@ play-bar
 .play-bar-right
 {
     width: var(--nav-width);
-    background-color: red;
+    /* background-color: red; */
     padding: 0 0.5rem;
 }
 
@@ -359,7 +400,7 @@ play-bar
 {
     /* width: 100%; */
     /* width: 500px; */
-    background-color: blue;
+    /* background-color: blue; */
     padding: 0 0.5rem;
 }
 
